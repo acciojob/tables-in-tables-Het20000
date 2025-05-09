@@ -6,9 +6,68 @@
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+  <body style="margin: 0;"> <table border="2">
+      <tr>
+            <td border="2">
+                <table class="nested-table" border="2">
+                    <tr><td class="nested-header" border="2">Nested Table 2</td></tr>
+                    <tr>
+                        <td border="2">
+                            <table class="nested-table nested-table-2-inner" border="2">
+                                <tr>
+                                    <th class="nested-header" border="2">Column 1</th>
+                                    <th class="nested-header" border="2">Column 2</th>
+                                </tr>
+                                <tr>
+                                    <td border="2">abc</td>
+                                    <td border="2">def</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td border="2">
+                <table class="nested-table" border="2">
+                    <tr><td class="nested-header" border="2">Nested Table 1</td></tr>
+                    <tr>
+                        <td border="2">
+                            <ul>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td border="2">
+                <table class="nested-table" border="2">
+                    <tr><td class="nested-header" border="2">Nested Table 3</td></tr>
+                    <tr>
+                        <td border="2">
+                            <table class="nested-table" border="2">
+                                <tr>
+                                    <td border="2"><span style="color: purple;">Nested Table</span></td>
+                                    <td border="2">Demo Continued</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td border="2">
+                <table class="nested-table" border="2">
+                    <tr><td class="nested-header" border="2">Nested Table 4</td></tr>
+                    <tr>
+                        <td class="black-bg" border="2">HTML</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
     </table>
   </body>
 </html>
